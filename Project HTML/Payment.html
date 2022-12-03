@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Payment</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+        }
+        .heading {
+            display: block;
+            width: 50%;
+            margin: auto;
+            border: 5px solid blue;
+            margin-top: 44px;
+            background: blue;
+            text-transform: uppercase;
+            color: white;
+            font-family: Michroma;
+        }
+
+        .method {
+            display: block;
+            width: 50%;
+            margin: auto;
+            border: 5px solid red;
+        }
+
+        .option {
+            padding: 30px;
+        }
+
+        .option:hover {
+            background-color: green;
+            transition: 1s;
+        }
+
+        .option a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        #upi a {
+            padding-left: 45px;
+        }
+
+        #card a {
+            padding-left: 45px;
+        }
+
+        #net a {
+            padding-left: 45px;
+        }
+        #cash a{
+            padding-left: 45px;
+        }
+        @media (max-width:924px){
+            .heading{
+                width:100%;
+            }
+            .method{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Shopingo.html"> <img src="Logo.png" alt="Logo" height="74px"> </a> </div>
+    </header>
+    <div class="heading">
+        <h1>Payment Options</h1>
+    </div>
+    <div class="method">
+        <div class="option" id="upi"><img src="https://logos-download.com/wp-content/uploads/2021/01/PhonePe_Logo.png"
+                alt="" height="20px"><a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/UPI.html">UPI Id</a></div>
+        <div class="option" id="card"><img
+                src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2019/04/03/80897-sbiclassicdebitcard.JPG?itok=q8-n-xno&c=7649147fcf2247bb7d434e86b73431a2"
+                alt="" height="20px"><a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Card.html">Credit Card/Debit Card/Atm Card</a></div>
+        <div class="option" id="cash"><a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Confirmation%20Page.html">Cash on Delivery</a></div>
+    </div>
+
+</body>
+
+</html>

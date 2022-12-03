@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI</title>
+    <style>
+        .heading {
+            display: block;
+            margin: auto;
+            width: 50%;
+            background: blue;
+            border: 5px solid blue
+        }
+
+        h3 {
+            padding: 20px;
+        }
+
+        .phone {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .upi {
+            overflow: hidden;
+            width: 50%;
+            margin: auto;
+            border: 5px solid blue;
+        }
+
+        input[type=email] {
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 50%;
+            background-color: antiquewhite;
+        }
+
+        .paytm {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .google {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .amazon {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .other {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        input[type=button] {
+            margin-top: 30px;
+            background: blue;
+            padding: 16px;
+            font-size: 20px;
+            width: 100%;
+            border: 5px;
+        }
+
+        input[type=button]:hover {
+            background: darkblue;
+        }
+
+        .inputBox1 {
+            font-size: 30px;
+        }
+
+        #phone {
+            font-size: 20px;
+        }
+
+        .inputBox{
+            visibility:hidden;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <div class="logo"> <a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Shopingo.html"> <img src="Logo.png" alt="Logo" height="74px"> </a> </div>
+    </header>
+    <div class="heading">
+        <h3>UPI</h3>
+    </div>
+
+    <!-- Payment Form -->
+
+    <div class="upi">
+        <div class="phone"><input type="radio" id="phone" name="upi" onclick="show()"><img src="https://www.voicendata.com/wp-content/uploads/2020/03/Phonepay-840x400.jpg" alt="" height="50px">
+            <div class="inputBox" id="red">
+                <span>Enter PhonePe Id: </span>
+                <input type="email" placeholder="123456789@abc" required="required">
+            </div>
+        </div>
+
+        <!-- Paytm -->
+
+        <div class="paytm"><input type="radio" id="paytm" name="upi" onclick="show1()"><img
+                src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.png" alt="" height="50px">
+            <div class="inputBox" id="red1">
+                <span>Enter Paytm Id: </span>
+                <input type="email" placeholder="123456789@abc" required="required">
+            </div>
+        </div>
+
+        <!-- Google Pay -->
+
+        <div class="google">
+            <input type="radio" id="google" name="upi" onclick="show2()">
+            <img src="" alt="">
+            <div class="inputBox" id="red2">
+                <span>Enter Google Pay Id: </span>
+                <input type="email" placeholder="123456789@abc" required="required">
+            </div>
+        </div>
+
+        <!-- Amazon Pay -->
+
+        <div class="amazon"><input type="radio" id="amazon" name="upi" onclick="show3()"><img
+                src="https://www.citypng.com/public/uploads/small/115964101405msdo9xoq9nygv3rzkvk0awvurerm89thspbbb88olrka5wcjx365aegnoe39l2obqnpshl9sefqlc75r6jjmitbksksofgrhswk.png"
+                alt="" height="50px">
+            <div class="inputBox" id="red3">
+                <span>Enter Amazon Pay Id: </span>
+                <input type="email" placeholder="123456789@abc" required="required">
+            </div>
+        </div>
+
+        <!-- Other Method -->
+
+        <div class="other">
+            <div class="inputBox1"><input type="radio" id="other" name="upi">
+                Enter any other UPI Id:
+                <input type="email" placeholder="123456789@abc" required="required">
+            </div>
+        </div>
+        <a href="#"><input type="button" value="Pay"></a>
+    </div>
+</body>
+<script>
+    function show()
+    {
+        document.getElementById("red").style.visibility="visible"
+    }
+    function show1()
+    {
+        document.getElementById("red1").style.visibility="visible"
+    }
+    function show2()
+    {
+        document.getElementById("red2").style.visibility="visible"
+    }
+    function show3()
+    {
+        document.getElementById("red3").style.visibility="visible"
+    }
+</script>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPPO Reno7 Pro 5G</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Tomorrow:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        header{
+            background: linear-gradient(90deg,black,#2317e2,#e42727,black);
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: white;
+        }
+
+        .box2 {
+            height: 55px;
+            width: 55px;
+            border-radius: 50%;
+            background: linear-gradient(180deg, aqua, red);
+            margin-top: 12px;
+        }
+
+        .box2 a span {
+            font-size: 51px;
+            text-decoration: none;
+            color: chartreuse
+        }
+
+        .navbar ul li .logo img {
+            height: 74px;
+        }
+
+        .navbar ul li .logo {
+            margin-left: 52px;
+        }
+
+        .navbar {
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+        }
+
+        .search {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin-left: -46px;
+        }
+
+        .navbar ul .b {
+            padding: 29px;
+            height: 20px;
+            margin-left: 2px;
+        }
+
+        .navbar ul .b a {
+            color: black;
+            text-decoration: none;
+            font-family: Bebas Neue;
+        }
+
+        .navbar ul .b:hover {
+            background: linear-gradient(90deg, black, rgb(45, 44, 44));
+        }
+
+        .navbar ul .b:hover a {
+            color: white;
+        }
+
+        .navbar ul .ab {
+            padding: 29px;
+            height: 20px;
+            margin-left: 93px;
+        }
+
+        .navbar ul .ab a {
+            color: black;
+            text-decoration: none;
+            font-family: Bebas Neue;
+        }
+
+        .navbar ul .ab:hover {
+            background: linear-gradient(90deg, black, rgb(45, 44, 44));
+        }
+
+        .navbar ul .ab:hover a {
+            color: white;
+        }
+
+        .searchBox {
+            position: absolute;
+            right: 0px;
+            top: 22px;
+            display: inline-block;
+            width: 294px;
+        }
+
+        .searchBox input {
+            padding: 30px;
+            width: 0px;
+            height: 0px;
+            background: linear-gradient(white, gray);
+            transition: 0.5s;
+            border: white;
+            font-family: Gemunu Libre;
+            font-size: 35px;
+            color: darkmagenta
+        }
+
+        .icon1 {
+            position: relative;
+            left: -50px;
+            top: 1px;
+            cursor:pointer;
+        }
+
+        .searchBox:hover input {
+            width: 200px;
+            border: 0px solid white;
+        }
+
+        #cart {
+            color: black;
+            font-size: 73px;
+            margin-left: 9cm;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name {
+            font-size: 47px;
+            color: black;
+            font-weight: bold;
+            margin-left: 190px;
+            margin-top: 20px;
+        }
+
+        .subint {
+            font-size: 30px;
+            color: gray;
+            margin-left: 5.4cm;
+        }
+
+        .amount {
+            position: absolute;
+            top: 7cm;
+            left: 29cm;
+            background: #efefef;
+            ;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #d8d8d8;
+            border-radius: 8px;
+            padding: 16px;
+            width: 25%;
+        }
+
+        .prc {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .price {
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .subprice {
+            color: gray;
+            font-size: 30px;
+            text-decoration: line-through;
+        }
+
+        .tax {
+            display: flex;
+            flex-direction: row;
+            margin-top: 12px;
+        }
+
+        .save {
+            color: #00C68C;
+            font-size: 17px;
+        }
+
+        .inc {
+            font-size: 17px;
+            margin-left: 91px;
+            color: #616161
+        }
+
+        .curr {
+            display: flex;
+            flex-direction: row;
+            background: #DCDCDC;
+            padding: 4px 16px;
+            margin-top: 16px;
+        }
+
+        .stock {
+            font-weight: 700;
+            color: rgb(0, 198, 140);
+        }
+
+        .in {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgb(255, 3, 13);
+            margin-left: 167px;
+        }
+
+        .quan {
+            display: flex;
+            flex-direction: row;
+            margin-top: 23px;
+            border: 1px solid white;
+            background: white;
+            width: 36%;
+            border-radius: 5px;
+        }
+
+        #add {
+            background-color: red;
+            width: 100%;
+            border-radius: 5px;
+            padding: 11px;
+            margin-top: 25px;
+            border: 1px solid red;
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #buy {
+            width: 100%;
+            border-radius: 5px;
+            padding: 11px;
+            margin-top: 25px;
+            border: 1px solid red;
+            color: red;
+            font-size: 23px;
+            font-weight: bold;
+            cursor:pointer;
+        }
+
+        form {
+            width: 300px;
+            padding-top: 50px;
+        }
+
+        .value-button {
+            display: inline-block;
+            border: 1px solid #ddd;
+            margin: 0px;
+            width: 40px;
+            height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 11px 0;
+            background: #eee;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .value-button:hover {
+            cursor: pointer;
+        }
+
+        form #decrease {
+            margin-right: -4px;
+            border-radius: 8px 0 0 8px;
+        }
+
+        form #increase {
+            margin-left: -4px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        form #input-wrap {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        input#number {
+            text-align: center;
+            border: none;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin: 0px;
+            width: 40px;
+            height: 40px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            margin: 0;
+        }
+
+        .img img{
+            margin-left: 155px;
+            margin-top: 20px;
+        }
+        .want{
+    display: flex;
+    flex-direction: row;
+    padding: 31px;
+    margin-top: 163px;
+    border:2px solid #f2eded;
+    justify-content: space-between;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <div class="logo"><img src="Logo.png" alt="Logo"></div>
+                </li>
+                <li class="ab"><a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Shopingo.html">Home</a></li>
+                <li class="b"><a href="#">Brands</a></li>
+                <li class="b"><a href="#">About Us</a></li>
+                <li class="b"><a href="#">Contact Us</a></li>
+                <li class="b"><a href="#">Feedback</a></li>
+                <li>
+                    <div class="box2"><a href="#"><span class="material-symbols-outlined">person</span></a></div>
+                </li>
+                <li><a href="#"><span class="material-symbols-outlined" id="cart">shopping_cart</span></a></li>
+            </ul>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search Here...">
+            <img class="icon1" src="https://cdn-icons-png.flaticon.com/512/151/151773.png" alt="" height="30px">
+        </div>
+    </header>
+
+
+
+    <div class="info">
+        <div class="img">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kzhbfrk0/mobile/q/d/3/-original-imagbgxfs3j6fcct.jpeg?q=70"
+                alt="" width="200px" height="400px">
+        </div>
+        <div class="intro">
+            <div class="name">OPPO Reno7 Pro 5G (Startrails Blue, 256 GB) (12 GB RAM)</div>
+            <div class="subint">MOBILE PHONES</div>
+        </div>
+    </div>
+    <div class="amount">
+        <div class="prc">
+            <div class="price">₹34,999</div>
+            <div class="subprice">₹36,999</div>
+        </div>
+        <div class="tax">
+            <div class="save">You save ₹2000 (6%)</div>
+            <div class="inc">Inclusive of all taxes</div>
+        </div>
+        <div class="curr">
+            <div class="stock">In Stock</div>
+            <div class="in">Currently in 244 carts</div>
+        </div>
+        <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="1" disabled/>
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </form>
+        <div class="add"><a href="#"><input type="button" id="add" value="ADD TO CART"></a></div>
+        <div class="buy"><a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Payment.html"><input type="button" id="buy" value="Buy Now"></a></div>
+    </div>
+    <div class="want">
+        <div class="warranty">1 Year Warranty</div>
+        <div class="replace">7 Days Replacement</div>
+        <div class="free">Free Shipping</div>
+        <div class="check">Secure Checkout</div>
+    </div>
+    <script>
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+</body>
+
+</html>

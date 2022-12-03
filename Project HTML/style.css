@@ -1,0 +1,341 @@
+/*Nav and Logo Bar*/
+header{
+    background: linear-gradient(90deg,black,#2317e2,#e42727,black);
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.box2{
+    height:55px;
+    width:55px;
+    border-radius: 50%;
+    background:linear-gradient(180deg,aqua,red);
+    margin-top: 12px;
+}
+.box2 a span{
+    font-size: 51px;
+    text-decoration: none;
+    color:chartreuse
+}
+.navbar ul li .logo img{
+    height:74px;
+}
+.navbar ul li .logo{
+    margin-left: 52px;
+}
+.navbar {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+.search {
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: -46px;
+}
+
+.navbar ul .b{
+    padding: 29px;
+    height:20px;
+    margin-left: 2px;
+}
+.navbar ul .b a{
+    color:black;
+    text-decoration: none;
+    font-family: Bebas Neue;
+}
+.navbar ul .b:hover{
+    background: linear-gradient(90deg,black,rgb(45, 44, 44));
+}
+.navbar ul .b:hover a{
+     color:white;
+}
+.navbar ul .ab{
+    padding: 29px;
+    height:20px;
+    margin-left: 93px;
+}
+.navbar ul .ab a{
+    color:black;
+    text-decoration: none;
+    font-family: Bebas Neue;
+}
+.navbar ul .ab:hover{
+    background: linear-gradient(90deg,black,rgb(45, 44, 44));
+}
+.navbar ul .ab:hover a{
+     color:white;
+}
+.searchBox{
+    position: absolute;
+    right:0px;
+    top:22px;
+    display: inline-block;
+    width: 294px;
+}
+.searchBox input{
+    padding:30px;
+    width:0px;
+    height:0px;
+    background: linear-gradient(white,gray);
+    transition: 0.5s;
+    border: white;
+    font-family: Gemunu Libre;
+    font-size: 35px;
+    color:darkmagenta
+}
+.icon1{
+    position:relative;
+    left:-50px;
+    top:1px;
+}
+.searchBox:hover input{
+    width:200px;
+    border:white;
+}
+#cart{
+    color: black;
+    font-size: 73px;
+    margin-left: 9cm;
+}
+
+/*Brand Bar*/
+
+.selector {
+    display: flex;
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 52px;
+    background-color: #2196f3
+}
+.selector ul {
+    display: flex;
+    width: 563px;
+}
+.selector ul li {
+    position: relative;
+    list-style: none;
+    z-index: 1;
+    margin-right: 327px;
+}
+.selector ul li a {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.selector ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition: 0.5s;
+    border: 10px solid #2196f3;
+    border-radius: 200px;
+}
+.selector ul li:hover a .icon {
+    transform: translateY(-80px);
+    border: 10px solid white;
+    background:linear-gradient(180deg,red,gold);
+}
+.selector ul li a .text {
+    position: absolute;
+    text-decoration: none;
+    color: #2196f3;
+    opacity: 0;
+    width:210px
+}
+.selector ul li:hover a .text {
+    text-decoration: underline;
+    opacity: 1;
+    color:black;
+    font-size:25px;
+    font-family: Abril Fatface;
+}
+
+/*Company Adds*/
+
+.a{
+    display: flex; margin:72px;
+    border: 5px solid gold;
+    border-radius: 40px;
+    background-color: gold;
+}
+.product{
+    margin-left: 68px;font-family: Tomorrow; font-size:30px; width:247px; color:black
+}
+.secure{
+    margin-left: 297px; font-family: Tomorrow; font-size:30px; width:238px; color:black
+}
+.return{
+    margin-left: 272px;font-family: Tomorrow; font-size:30px; width:240px; color:black
+}
+
+/*Products*/
+
+.container{
+    display:flex;
+    position: relative;
+    left:52px;
+}
+.container .box{
+    position:relative;
+    height: 460px;
+    width:363px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .box:hover{
+    z-index: 1;
+    transform: scale(1.25);
+}
+.container .box .imgBx:before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.container .box .imgBx{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 57%;
+    height: 87%;
+    object-fit: cover;
+}
+.container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 171px;
+    height: 369px;
+    z-index: 2;
+    transform: translateY(-350px);
+    Opacity: 0.8;
+    border-radius: 30px;
+}
+
+.container .box:hover .content{
+    background:linear-gradient(180deg,black,gray,white); 
+    transition:0.5s ;
+    transform: translateY(0);
+    left:0px;
+    top:0px;
+    padding:15px;
+    border-radius: 30px;
+}
+.container .box .content a{
+    text-decoration: none;
+}
+.container .box .content a.name{
+    color:white;
+    font-family: Lobster;
+}
+.container .box .content a.amount{
+    color:black;
+    font-family: Playfair Display;
+}
+
+/*Products1*/
+
+.container1{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    left:42px;
+}
+.container1 .box1{
+    position:relative;
+    height: 460px;
+    width:363px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container1 .box1:hover{
+    z-index: 1;
+    transform: scale(1.25);
+}
+.container1 .box1 .imgBx1:before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.container1 .box1 .imgBx1{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 89%;
+    height: 100%;
+    object-fit: cover;
+}
+.container1 .box1 .content1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 296px;
+    height: 221px;
+    z-index: 2;
+    transform: translateY(-350px);
+    opacity:0.9
+}
+.container1 .box1:hover{
+    height:250px
+}
+.container1 .box1:hover .content1{
+    background:linear-gradient(180deg, rgb(195, 0, 255),rgb(0, 208, 255),blue); 
+    transition:0.5s ;
+    transform: translateY(0);
+    left:0px;
+    top:0px;
+    padding:15px;
+}
+.container1 .box1 .content1 a{
+    text-decoration: none;
+}
+.container1 .box1 .content1 a.name1{
+    color:white;
+    font-family: Lobster;
+}
+.container1 .box1 .content1 a.amount1{
+    color:black;
+    font-family: Playfair Display;
+}
+
+
+/*Footer Information*/
+
+footer{
+    background: linear-gradient(20deg, green,yellow);
+}
+hr{
+    margin:35px
+}
+table.footer{
+    text-align: left;border-spacing: 1cm;
+}
+th{
+    text-transform: uppercase; font-family: Bungee;
+}
+a.footer{
+    color:black; text-decoration: none;font-family: Rye;
+}
+a.footer:hover{
+    text-decoration: underline; font-family: Rye;
+}
+
