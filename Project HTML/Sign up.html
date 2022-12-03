@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .box {
+            overflow: hidden;
+            position: relative;
+            width: 870px;
+            height: 948px;
+            background-color: black;
+            border-radius: 8px;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            width: 950px;
+            height: 948px;
+            top: -50%;
+            left: -100%;
+            background: linear-gradient(0deg, transparent, transparent, red, red, red);
+            animation: animate 6s linear infinite;
+            transform-origin: bottom right;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            width: 950px;
+            height: 948px;
+            top: -50%;
+            left: -100%;
+            background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+            animation: animate 6s linear infinite;
+            transform-origin: bottom right;
+
+            animation-delay: -3s;
+        }
+
+        .form {
+            background: rgb(58, 56, 56);
+            position: absolute;
+            inset: 20px;
+            z-index: 10;
+            border-radius: 8px;
+            padding: 40px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form h2 {
+            color: blue;
+            padding: 2px;
+            text-align: center;
+            font-family: Merriweather;
+            font-size: 25px;
+        }
+
+        .inputBox {
+            margin: 22px -42px;
+            position: relative;
+            bottom: 0px;
+            width: 670px;
+        }
+
+        .inputBox input {
+            padding: 22px 10px 10px 10px;
+            background: transparent;
+            outline: none;
+            border: none;
+            width: 100%;
+            z-index: 10;
+            font-size: 20px;
+            color: greenyellow;
+        }
+
+        .inputBox span {
+            position: absolute;
+            padding: 10px 10px 10px 10px;
+            pointer-events: none;
+            transition: 0.5s;
+            left: 0;
+            font-family: Teko;
+            font-size: 25px;
+        }
+
+        .inputBox input:valid~span,
+        .inputBox input:focus~span {
+            transform: translateY(-40px);
+            color: blue;
+        }
+
+        .inputBox i {
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 670px;
+            height: 2px;
+            transition: 0.5s;
+            background-color: red;
+            z-index: -9;
+        }
+
+        .inputBox input:valid~i,
+        .inputBox input:focus~i {
+            height: 44px;
+            border-radius: 8px;
+        }
+
+        .link {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px -42px;
+        }
+
+        .link a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .link a:hover {
+            color: blue;
+        }
+
+        input[type=Submit] {
+            padding: 11px 0px 11px 0px;
+            margin: 22px -44px;
+            border: none;
+            background-color: red;
+            border-radius: 10px;
+            width: 187px;
+        }
+
+        input[type=Submit]:hover {
+            background: blue;
+        }
+
+        @media (max-width:1214px) {
+            .logo {
+                visibility: hidden;
+            }
+        }
+
+        @media(max-width:721px) {
+            .inputBox i {
+                width: 47%;
+            }
+        }
+        .material-symbols-outlined{
+            position: relative;
+            top:-56px;
+            left: 15cm;
+            color:white;
+        }
+        .material-symbols-outlined:hover{
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"> <a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/Shopingo.html"> <img src="Logo.png" alt="Logo" height="74px"> </a> </div>
+    <form action="action.php" method="get">
+        <div class="box">
+            <div class="form">
+                <h2>Sign Up</h2>
+                <div class="inputBox">
+                    <input type="text" name="Name" required="required">
+                    <span>Name</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="Email Id" required="required">
+                    <span>Email Id</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="number" name="Contact Number" required="required">
+                    <span>Contact Number</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="Password" id="Password" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <span class="material-symbols-outlined" id="icon1" onclick="toggle()">
+                    visibility </span>
+                <div class="inputBox">
+                    <input type="password" name="Confirm Password" id="password" required="required">
+                    <span>Confirm Password</span>
+                    <i></i>
+                </div>
+                <span class="material-symbols-outlined" id="icon2" onclick="show()">
+                    visibility </span>
+                <div class="inputBox">
+                    <input type="text" name="Address" required="required">
+                    <span>Address</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="number" name="Pincode" required="required">
+                    <span>Pincode</span>
+                    <i></i>
+                </div>
+                <a href="file:///D:/Programming%20and%20%20Web%20Development/Project%20HTML/OTP.html"> <input type="Submit" value="Sign Up"> </a>
+            </div>
+        </div>
+    </form>
+    <script>
+        var state = false;
+        function toggle(){
+            if (state){
+                document.getElementById("Password").setAttribute("type", "password");
+                document.getElementById("icon1").style.color="white"
+                state = false;
+            }
+            else{
+                document.getElementById("Password").setAttribute("type", "text");
+                document.getElementById("icon1").style.color="#0026ff"
+                state = true;
+            }
+        }
+        var state1 = false;
+        function show(){
+            if (state1){
+                document.getElementById("password").setAttribute("type", "password");
+                document.getElementById("icon2").style.color="white"
+                state1 = false;
+            }
+            else{
+                document.getElementById("password").setAttribute("type", "text");
+                document.getElementById("icon2").style.color="#0026ff"
+                state1 = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
